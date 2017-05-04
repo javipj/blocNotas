@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.javipj.blocnotas" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Bloc de notas</name>
+    <description>
+        Tu aplicación par guardar notas
+    </description>
+    <author email="javipj@gmail.com" href="http://javipj.com">
+        Javier Puit Juste
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

@@ -1,0 +1,42 @@
+.fotoUser{
+	width:65px;
+	height:65px;
+}
+
+
+#nuevaNota {
+	display:inline-block;
+	min-height:10px;
+	padding:10px;
+	width:80%;
+	outline:none;
+	transition: all 0.15s ease-in-out;border-radius:3px;
+	border:1px solid rgba(0,0,0,0.2);
+	float:left;
+}
+
+#guardarNota{
+	float:left;
+}
+#contenedornotasguardadas{
+	clear:both;
+}
+.notasguadadas{
+
+	margin-bottom:5px;
+	margin-top:5px;
+	display:inline-block;
+	min-height:10px;
+	padding:10px;
+	width:80%;
+	outline:none;
+	transition: all 0.15s ease-in-out;border-radius:3px;
+	border:1px solid rgba(0,0,0,0.2);
+}
+
+
+.verde {box-shadow: 0 0 5px rgba(0,255,0,1);border:1px solid rgba(0,255,0,0.8); background-color:rgba(0,180,0,0.2);}
+.azul:focus {box-shadow: 0 0 5px rgba(0,0,255,1);border:1px solid rgba(0,0,255,0.8); background-color:rgba(0,0,180,0.2);}
+
+
+
