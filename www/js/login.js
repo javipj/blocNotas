@@ -5,7 +5,7 @@ Array.prototype.last = function() {return this[this.length-1];}
 function onDeviceReady() {
 
 	/*app iniciada correctamente*/
-
+	alert("start");
 	//inicializar firebase
 	iniciarFireBase();
 	checkloginInicio();
