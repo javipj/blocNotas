@@ -34,8 +34,9 @@ function iniciarFireBase(){
 
 
 function lGoogle(){
+alert("hola");
 	var provider = new firebase.auth.GoogleAuthProvider();
-
+alert("hola2");
 	
 		a=firebase.auth().signInWithRedirect(provider);
 	alert(a);
