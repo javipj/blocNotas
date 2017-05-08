@@ -1,6 +1,6 @@
 Array.prototype.last = function() {return this[this.length-1];}
 
-
+	var a="nada";
 
 function onDeviceReady() {
 
@@ -35,13 +35,23 @@ function iniciarFireBase(){
 
 function lGoogle(){
 	var provider = new firebase.auth.GoogleAuthProvider();
-	firebase.auth().signInWithRedirect(provider);
+
+	
+		a=firebase.auth().signInWithRedirect(provider);
+	alert(a);
+	setTimeout(function(){ alert(a.ra.code); }, 1000);
+	setTimeout(function(){ alert(a.ra.message); }, 1000);
+
 }
 
 function lFacebook(){
 	
 	var provider = new firebase.auth.FacebookAuthProvider();
-	firebase.auth().signInWithRedirect(provider);
+	try{
+		firebase.auth().signInWithRedirect(provider);
+	}catch(err) {
+	    alert(err.message);
+	}
 }
 
 
