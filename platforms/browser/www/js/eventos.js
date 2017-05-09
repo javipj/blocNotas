@@ -1,4 +1,10 @@
 document.addEventListener("deviceready", onDeviceReady, false);
+window.addEventListener("load", function(event) {
+	//inicializar firebase
+	alert("onload");
+	iniciarFireBase();
+	checkloginInicio();
+});
 
 $("#loginGoogle").click(function() {
   lGoogle();
