@@ -5,11 +5,7 @@ var a="nada";
 function onDeviceReady() {
 
 	/*app iniciada correctamente*/
-	alert("start");
-	//inicializar firebase
-	iniciarFireBase();
-	checkloginInicio();
-
+	alert("phonegap cargado");
 
 }
 
