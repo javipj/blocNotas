@@ -27,6 +27,10 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+
+
+    <plugin spec="https://github.com/javipj/cordova-universal-links-plugin" source="git" />
+
     <content src="index.html" />
    <access origin="*" />
     <allow-intent href="http://*/*" />
