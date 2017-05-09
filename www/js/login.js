@@ -1,6 +1,6 @@
 Array.prototype.last = function() {return this[this.length-1];}
 
-	var a="nada";
+var a="nada";
 
 function onDeviceReady() {
 
@@ -40,7 +40,7 @@ alert("hola");
 }catch(err) {
 	    alert(err.message);
 	}
-alert("hola2");
+	alert("hola2");
 	
 		a=firebase.auth().signInWithRedirect(provider);
 	alert(a);
