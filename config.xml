@@ -10,7 +10,13 @@
 
     <content src="index.html" />
     <access origin="*" />
-    
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
     <plugin name="cordova-plugin-buildinfo" spec="~1.1.0" />
     <plugin name="cordova-universal-links-plugin" spec="~1.2.1" />
     <plugin name="cordova-plugin-browsertab" spec="~0.2.0" />
