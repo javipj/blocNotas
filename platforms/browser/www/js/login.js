@@ -89,12 +89,13 @@ function lFacebook(){
 
 
 function checkloginInicio(){
-
+alert("inicio checklogin");
 	firebase.auth().onAuthStateChanged(function(user) {
 	  if (user) {
 		  window.location.replace("listarNotas.html");
 	  } else {
 	    // No user is signed in.
+		alert("nousersigin");
 	  }
 	});
 
