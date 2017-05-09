@@ -6,9 +6,6 @@ function onDeviceReady() {
 
 	/*app iniciada correctamente*/
 
-	//inicializar firebase
-	iniciarFireBase();
-	checklogin();
 	
 
 
