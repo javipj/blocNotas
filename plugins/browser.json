@@ -63,6 +63,19 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.javipj.blocnotas"
+        },
+        "cordova-plugin-buildinfo": {
+            "PACKAGE_NAME": "com.javipj.blocnotas"
+        },
+        "cordova-universal-links-plugin": {
+            "PACKAGE_NAME": "com.javipj.blocnotas"
+        },
+        "cordova-plugin-browsertab": {
+            "PACKAGE_NAME": "com.javipj.blocnotas"
+        },
+        "cordova-plugin-customurlscheme": {
+            "URL_SCHEME": "com.firebase.cordova",
+            "PACKAGE_NAME": "com.javipj.blocnotas"
         }
     },
     "dependent_plugins": {
