@@ -49,7 +49,7 @@
         <variable name="URL_SCHEME" value="com.firebase.cordova" />
     </plugin>
 	<universal-links>
-	    <host name="https://yx9s4.app.goo.gl/Zi7X" scheme="https" />
+	    <host name="https://yx9s4.app.goo.gl/pGuk" scheme="https" />
 	    <host name="blocnotas-941b6.firebaseapp.com" scheme="https">
 		<path url="/__/auth/callback"/>
 	    </host>
