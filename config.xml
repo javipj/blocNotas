@@ -29,7 +29,7 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 
 
-    <plugin spec="https://github.com/javipj/cordova-universal-links-plugin" source="git" />
+   
 
     <content src="index.html" />
    <access origin="*" />
