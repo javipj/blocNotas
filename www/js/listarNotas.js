@@ -90,7 +90,7 @@ function checklogin(){
 		lNota();
 		  
 	  } else {
-	    window.location.replace("listarNotas.html");
+	    window.location.replace("index.html");
 	  }
 	});
 
