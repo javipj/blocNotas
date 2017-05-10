@@ -6,12 +6,18 @@ $("#b_signin").click(function() {
 $("#b_signup").click(function() {
   signup();
 });
-
-
-
 $("#guardarNota").click(function() {
-  gNota();
+  gNota(); 
 });
+
+ $('#idRunTheCode').click(function(e) {
+        $('.notes').postitall();
+        e.preventDefault();
+
+        $('.notes').postitall();
+        e.preventDefault();
+
+    });
 
 
 

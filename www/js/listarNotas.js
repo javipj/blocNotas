@@ -46,7 +46,7 @@ function lNota(){
 				
 				//childData.fecha
 
-				str+='<div class="verde notasguardadas" id="'+key+'" contentEditable="false">'+childData.texto+'</div>';
+				str+='<div class="notes verde notasguardadas" id="'+key+'" contentEditable="false">'+childData.texto+'</div>';
 
 				$("#contenedornotasguardadas").html(str);
 
@@ -85,7 +85,7 @@ function checklogin(){
 	firebase.auth().onAuthStateChanged(function(user) {
 	  if (user) {
 
-		str="<p><img class=\"fotoUser\" src=\""+user.photoURL+"\"></p><p>Email:"+user.email+"</p><p>Uid:"+user.uid+"</p>"
+		str="<p>Email:"+user.email+"</p><p>Uid:"+user.uid+"</p>"
 		$("#datosUsuario").html(str);
 		lNota();
 		  

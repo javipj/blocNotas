@@ -68,9 +68,7 @@ function signin(){
 		firebase.auth().signInWithEmailAndPassword(user, pass)
 
 		 .then(function(firebaseUser) {
-			alert("login correcto");
 			window.location.href = "listarNotas.html";
-		
 		   })
 		    .catch(function(error) {
 		  // Handle Errors here.
