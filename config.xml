@@ -28,32 +28,15 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <content src="index.html" />
     <access origin="*" />
+
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
-    <plugin name="cordova-plugin-buildinfo" spec="~1.1.0" />
-    <plugin name="cordova-universal-links-plugin" spec="~1.2.1" />
-    <plugin name="cordova-plugin-browsertab" spec="~0.2.0" />
-    <plugin name="cordova-plugin-inappbrowser" spec="~1.3.0" />
-    <plugin name="cordova-plugin-customurlscheme" spec="~4.2.0">
-        <variable name="URL_SCHEME" value="com.firebase.cordova" />
-    </plugin>
-	<universal-links>
-	    <host name="yx9s4.app.goo.gl" scheme="https" />
-	    <host name="blocnotas-941b6.firebaseapp.com" scheme="https">
-		<path url="/__/auth/callback"/>
-	    </host>
-	</universal-links>
+
+
 
 
 </widget>

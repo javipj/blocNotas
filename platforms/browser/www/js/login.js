@@ -5,7 +5,8 @@ Array.prototype.last = function() {return this[this.length-1];}
 function onDeviceReady() {
 
 	/*app iniciada correctamente*/
-	alert("phonegap cargado");
+	iniciarFireBase();
+	checkloginInicio();
 
 }
 
@@ -31,67 +32,73 @@ function iniciarFireBase(){
 }
 
 
-function lGoogle(){
+function signup(){
 
 
-	try{
-	var provider = new firebase.auth.GoogleAuthProvider();
-	}catch(err) {
-	    alert(err.message);
-	}
-	
+		var email=document.getElementById("email").value;
+		var password=document.getElementById("password").value;
+
+		var usuario=firebase.auth().createUserWithEmailAndPassword(email, password)
+
+		 .then(function(firebaseUser) {
+			//usuario registrado correctamente
+			//assignado customid equivalente al de firebase en batch.com para no tener dobles identidades		
 
 
-	firebase.auth().signInWithRedirect(provider).then(function() {
-	  firebase.auth().getRedirectResult().then(function(result) {
-	    // This gives you a Google Access Token.
-	    // You can use it to access the Google API.
-	    var token = result.credential.accessToken;
-	    // The signed-in user info.
-	    var user = result.user;
-	    alert("login");
-	  }).catch(function(error) {
-	    // Handle Errors here.
-	    var errorCode = error.code;
-	    var errorMessage = error.message;
-	    alert("error");
-	  });
-	});
+			window.location.href = "listarNotas.html";
+		   })
 
+		.catch(function(error) {
+		  // Handle Errors here.
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+		  alert(errorMessage);
+		});
 
 
 
 }
 
-function lFacebook(){
-	
-	var provider = new firebase.auth.FacebookAuthProvider();
-	try{
-		firebase.auth().signInWithRedirect(provider);
-	}catch(err) {
-	    alert(err.message);
-	}
+function signin(){
+
+		var user=document.getElementById("email").value;
+		var pass=document.getElementById("password").value;
+
+
+		firebase.auth().signInWithEmailAndPassword(user, pass)
+
+		 .then(function(firebaseUser) {
+			alert("login correcto");
+			window.location.href = "listarNotas.html";
+		
+		   })
+		    .catch(function(error) {
+		  // Handle Errors here.
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+		  if (errorCode === 'auth/wrong-password') {
+		    alert('Wrong password.');
+		  } else {
+		    alert(errorMessage);
+		  }
+		  console.log(error);
+		});
+
+
+
 }
+
+
 
 
 function checkloginInicio(){
-alert("inicio checklogin");
 
-firebase.auth().getRedirectResult().then(function(result) {
-	  if (result.credential) {
-	    // This gives you a Google Access Token.
-	    // You can use it to access the Google API.
-	    var token = result.credential.accessToken;
-	    // The signed-in user info.
-	    var user = result.user;
-		alert("logado");
-	  }
-	}).catch(function(error) {
-	  // Handle Errors here.
-	  var errorCode = error.code;
-	  var errorMessage = error.message;
-		alert(error.message);
-	});
+var user = firebase.auth().currentUser;
+
+if (user) {
+	window.location.href = "listarNotas.html";
+}
+
 
 
 }

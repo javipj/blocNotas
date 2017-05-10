@@ -3,26 +3,45 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
         <title>Blank App</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
 
 	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
-
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/login.js"></script>
 
 
 
     </head>
     <body>
+	<div data-role="page">
+		<div data-tap-toggle="false"   data-position="fixed" data-role="header"><h1>Bloc de notas</h1></div>
+		<div role="main" class="ui-content">
+			<div data-role="fieldcontain">
+			    <label for="name">Email:</label>
+			    <input type="text" name="email" id="email" value=""  />
+			    <label for="name">Password:</label>
+			    <input type="password" name="password" id="password" value=""  />
+			</div>	
+			<div   data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal"><div class="ui-controlgroup-controls">
+						<a id="b_signin" href="#" data-role="button" data-icon="plus" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-icon-left ui-corner-left ui-btn-up-c"><span class="ui-btn-inner ui-corner-left"><span class="ui-btn-text">Sign in</span><span class="ui-icon ui-icon-plus ui-icon-shadow">&nbsp;</span></span></a>
+						<a id="b_signup" href="#" data-role="button" data-icon="delete" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-icon-left ui-corner-right ui-controlgroup-last ui-btn-up-c"><span class="ui-btn-inner ui-corner-right ui-controlgroup-last"><span class="ui-btn-text">Sign up</span><span class="ui-icon ui-icon-delete ui-icon-shadow">&nbsp;</span></span></a>
+			</div>
 
-	<input type="button" id="loginGoogle" value="loginGmail">
-	<input type="button" id="loginFacebook" value="loginFacebook">
 
-	<a href="#" onclick="lGoogle();">go</a>
+			
+			
+		</div>
+		<div data-role="footer" data-tap-toggle="false"  data-position="fixed"><h1>© Javi Puit Juste - javipj@gmail.com</h1></div>
+	</div>
+
+
 
 	<script type="text/javascript" src="cordova.js"></script>
-	<script src="js/login.js"></script>
 	<script src="js/eventos.js"></script>
 	
     </body>

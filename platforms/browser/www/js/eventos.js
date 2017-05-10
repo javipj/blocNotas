@@ -1,19 +1,19 @@
 document.addEventListener("deviceready", onDeviceReady, false);
-window.addEventListener("load", function(event) {
-	//inicializar firebase
-	iniciarFireBase();
-	checkloginInicio();
+
+$("#b_signin").click(function() {
+  signin();
+});
+$("#b_signup").click(function() {
+  signup();
 });
 
-$("#loginGoogle").click(function() {
-  lGoogle();
-});
-$("#loginFacebook").click(function() {
-  lFacebook();
-});
+
+
 $("#guardarNota").click(function() {
   gNota();
 });
+
+
 
 
 

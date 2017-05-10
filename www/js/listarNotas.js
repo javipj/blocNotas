@@ -6,7 +6,8 @@ function onDeviceReady() {
 
 	/*app iniciada correctamente*/
 
-	
+	iniciarFireBase();
+	checklogin();
 
 
 }
@@ -79,15 +80,17 @@ function iniciarFireBase(){
 
 function checklogin(){
 
+
+
 	firebase.auth().onAuthStateChanged(function(user) {
 	  if (user) {
 
-		str="<p><img class=\"fotoUser\" src=\""+user.photoURL+"\"></p><p>Nombre:"+user.displayName+"</p><p>Email:"+user.email+"</p><p>Uid:"+user.uid+"</p>"
+		str="<p><img class=\"fotoUser\" src=\""+user.photoURL+"\"></p><p>Email:"+user.email+"</p><p>Uid:"+user.uid+"</p>"
 		$("#datosUsuario").html(str);
 		lNota();
 		  
 	  } else {
-	    window.location.replace("index.html");
+	    window.location.replace("listarNotas.html");
 	  }
 	});
 
