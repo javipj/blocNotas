@@ -5,14 +5,29 @@
 
 
 #nuevaNota {
-	display:inline-block;
-	min-height:10px;
-	padding:10px;
-	width:80%;
-	outline:none;
-	transition: all 0.15s ease-in-out;border-radius:3px;
-	border:1px solid rgba(0,0,0,0.2);
+
 	float:left;
+
+
+	background:#fefabc; 
+	padding:15px; 
+	font-family: 'Gloria Hallelujah', cursive; 
+	font-size:15px; 
+	color: #050; 
+	width:200px!important; 
+	float:left;
+	margin:5px;
+
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+
+	box-shadow: 0px 4px 6px #333;
+	-moz-box-shadow: 0px 4px 6px #333;
+	-webkit-box-shadow: 0px 4px 6px #333;
+
 }
 
 #guardarNota{
@@ -21,19 +36,29 @@
 #contenedornotasguardadas{
 	clear:both;
 }
-.notasguadadas{
 
-	margin-bottom:5px;
-	margin-top:5px;
-	display:inline-block;
-	min-height:10px;
-	padding:10px;
-	width:80%;
-	outline:none;
-	transition: all 0.15s ease-in-out;border-radius:3px;
-	border:1px solid rgba(0,0,0,0.2);
+
+.post-it {
+background:#fefabc; 
+padding:15px; 
+font-family: 'Gloria Hallelujah', cursive; 
+font-size:15px; 
+color: #000; 
+width:200px!important; 
+float:left;
+margin:5px;
+
+-moz-transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+transform: rotate(0deg);
+
+box-shadow: 0px 4px 6px #333;
+-moz-box-shadow: 0px 4px 6px #333;
+-webkit-box-shadow: 0px 4px 6px #333;
+
 }
-
 
 .verde {box-shadow: 0 0 5px rgba(0,255,0,1);border:1px solid rgba(0,255,0,0.8); background-color:rgba(0,180,0,0.2);}
 .azul:focus {box-shadow: 0 0 5px rgba(0,0,255,1);border:1px solid rgba(0,0,255,0.8); background-color:rgba(0,0,180,0.2);}

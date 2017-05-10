@@ -46,7 +46,7 @@ function lNota(){
 				
 				//childData.fecha
 
-				str+='<div class="notes verde notasguardadas" id="'+key+'" contentEditable="false">'+childData.texto+'</div>';
+				str+='<div class="post-it  notasguardadas" id="'+key+'" contentEditable="false">'+childData.texto+'</div>';
 
 				$("#contenedornotasguardadas").html(str);
 

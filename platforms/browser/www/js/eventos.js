@@ -10,14 +10,8 @@ $("#guardarNota").click(function() {
   gNota(); 
 });
 
- $('#idRunTheCode').click(function(e) {
-        $('.notes').postitall();
-        e.preventDefault();
 
-        $('.notes').postitall();
-        e.preventDefault();
 
-    });
 
 
 

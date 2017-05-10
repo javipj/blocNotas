@@ -266,7 +266,7 @@ var delay = (function(){
         resizable       : true,         //Set resizable feature on or off
         editable        : true,         //Set contenteditable and enable changing note content
         changeoptions   : false,         //Set options feature on or off
-        blocked         : true,         //Postit can not be modified
+        blocked         : false,         //Postit can not be modified
         hidden          : true,         //The note can be hidden
         minimized       : true,         //true = minimized, false = maximixed
         expand          : true,         //Expand note
