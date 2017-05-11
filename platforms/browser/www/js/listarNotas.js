@@ -68,6 +68,8 @@ function lNota(){
 		  	});
 		});
 
+	$("#contenedornotasguardadas").html(str);
+
 
 
 }
