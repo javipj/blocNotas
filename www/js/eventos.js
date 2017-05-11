@@ -6,7 +6,7 @@ $("#b_signin").click(function() {
 $("#b_signup").click(function() {
   signup();
 });
-$("#guardarNota").click(function() {
+$(".icosave").click(function() {
   gNota(); 
 });
 

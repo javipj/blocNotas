@@ -23,10 +23,17 @@ function gNota(){
 				    texto: texto,
 				    fecha : "xx/xx/xxxx"
 				  });
+	$("#nuevaNota").html('<img src="img/save.png" class="icosave">');
+	$(".icosave").click(function() {
+	  gNota(); 
+	});
 
 	lNota();
 
 }
+
+
+
 
 function lNota(){
 	//lista notas del usuario
@@ -46,12 +53,16 @@ function lNota(){
 				
 				//childData.fecha
 
-				str+='<div class="post-it  notasguardadas" id="'+key+'" contentEditable="false">'+childData.texto+'</div>';
+				str+='<div class="post-it  notasguardadas" contentEditable="false">'+childData.texto+'<img src="img/delete.png" id="'+key+'"  class="icodelete"></div>';
 
 				$("#contenedornotasguardadas").html(str);
 
-				$(".notasguardadas").on( "click", function() {
-				  console.log( $( this ).attr("id") );
+				$(".icodelete").on( "click", function() {
+					var user = firebase.auth().currentUser;
+					firebase.database().ref(user.uid).child($( this ).attr("id")).remove();
+					lNota();
+					console.log($( this ).attr("id"));
+
 				});
 
 		  	});
